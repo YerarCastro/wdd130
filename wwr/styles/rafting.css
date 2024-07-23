@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #a13524;
+    --secondary-color: #E2AEDD;
+    --accent1-color: #6d230f;
+    --accent2-color: #EBCBF4;
+    --heading-font: 'Luxurious Roman', serif;
+    --paragraph-font: 'Open Sans', serif;
+    --nav-background-color: #eeeb28;
+    --nav-link-color: #0c4cfc; 
+    --nav-hover-link-color: #BDADEA;
+    --nav-hover-background-color: #B91372;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans&display=swap");
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--nav-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header img {
+    height: 80px;
+    
+}
+
+nav a {
+    color: var(--nav-link-color);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    padding: 5px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--heading-font);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 75px;
+}
+
+article {
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 5px;
+}
+
+article img {
+    float: right;
+    width: 50px;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+    
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer nav img {
+    width: 18px;
+    height: auto;
+    margin-left: 5px;
+}
+

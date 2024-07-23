@@ -46,4 +46,8 @@ nav {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
    }
-   
+   .hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+   }
