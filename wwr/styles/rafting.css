@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-color: #a13524;
     --secondary-color: #E2AEDD;
     --accent1-color: #6d230f;
@@ -13,6 +13,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans&display=swap");
 
+
+
+
+
+
+
 body {
     font-family: var(--paragraph-font);
     margin: 0;
@@ -25,11 +31,11 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+
 }
 
 header img {
     height: 80px;
-    
 }
 
 nav a {
@@ -125,4 +131,192 @@ footer nav img {
     height: auto;
     margin-left: 5px;
 }
+ */
+/* Variables */
+:root {
+    --primary-color: #a13524;
+    --secondary-color: #E2AEDD;
+    --accent1-color: #6d230f;
+    --accent2-color: #EBCBF4;
+    --heading-font: 'Luxurious Roman', serif;
+    --paragraph-font: 'Open Sans', serif;
+    --nav-background-color: #eeeb28;
+    --nav-link-color: #0c4cfc; 
+    --nav-hover-link-color: #BDADEA;
+    --nav-hover-background-color: #B91372;
+}
 
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans&display=swap");
+
+/* General Styles */
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    padding: 20px;
+}
+
+header img {
+    height: 80px;
+    grid-column: 1 / 2;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2 / 3;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    padding: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--heading-font);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 75px;
+}
+
+/* Article Section */
+article {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 5px;
+}
+
+article img {
+    float: right;
+    width: 50px;
+    height: auto;
+}
+
+/* Main Sections */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+section p {
+    margin: 0;
+
+
+}
+
+/* Adventures Section */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* Espacio entre las figuras */
+    text-align: center; /* Centra el texto y figuras dentro del contenedor */
+    justify-content: space-around; /* Distribuye el espacio entre las columnas */
+}
+.adventures h2 {
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+    justify-self: center; /* Centra horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    border-bottom-style:solid;
+
+}
+figure {
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+figcaption {
+    text-align: center;
+    background-color: #eee;
+    padding: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--nav-background-color);
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 10px;
+}
+
+footer nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer nav img {
+    width: 24px;
+    height: auto;
+}
+
+/* Additional Styling */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+}
