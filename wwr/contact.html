@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/rafting.css"> 
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-rapids.jpeg" alt="Logo">
+        <nav>
+            <a href="index.html">Index</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="company-info">
+            <h2>Company Information</h2>
+            <p>Address: 6566 N Military Trl, West Palm Beach, FL 33407, United States</p>
+            <p>Phone Number: +15618486272</p>
+            <p>Email: best_rapidss@gmail.com</p>
+            <!-- Embedded Google Map (Replace with your actual map embed code) -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.2017035375143!2d-80.10919052600653!3d26.769839666218562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d92a7b1cfdcfab%3A0xe4a2314b51862f94!2sRapids%20Waterpark!5e0!3m2!1ses-419!2smx!4v1721857222655!5m2!1ses-419!2smx" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+        <section id="employee-profiles">
+            <h2>Employee Profiles</h2>
+            <div class="employee">
+                <img src="images/happy-employee1.jfif" alt="Employee 1">
+                <p>Caption: Community Manager</p>
+            </div>
+            <div class="employee">
+                <img src="images/happy-employee2.jfif" alt="Employee 2">
+                <p>Caption: Human Resources Representative</p>
+            </div>
+            <div class="employee">
+                <img src="images/happy-employee3.jfif" alt="Employee 3">
+                <p>Caption: Customer Service Agent</p>
+            </div>
+        </section>
+        
+        <section id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general"> General Inquiry</label><br>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <label><input type="checkbox" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter</label>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&#169;2024 🍕 Yerar Castro 🍕 WDD 130</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">Facebook
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">Instagram
+                <img src="images/instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/?lang=eng" target="_blank">X
+                <img src="images/X-icon.png" alt="X">
+            </a>
+        </nav>
+    </footer>
+    
+</body>
+</html>
