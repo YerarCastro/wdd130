@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1>HTML and CSS Quiz</h1>
+    
+    <form action="submit_quiz.php" method="post">
+        <div>
+            <label for="q1">1. Fill in the blank: HTML stands for <em>HyperText Markup Language</em>.</label><br>
+            <input type="text" id="q1" name="q1" required>
+        </div>
+        
+        <div>
+            <label for="q2">2. Describe briefly the purpose of CSS:</label><br>
+            <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
+        </div>
+        
+        <div>
+            <label for="q3">3. What is the correct HTML element for inserting a line break?</label><br>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="br">br</option>
+                <option value="break">break</option>
+                <option value="lb">lb</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="q4">4. How many heading levels are there in HTML?</label><br>
+            <input type="number" id="q4" name="q4" min="1" max="6" required>
+        </div>
+        
+        <button type="submit">Submit Quiz</button>
+    </form>
+    
+</body>
+</html>
